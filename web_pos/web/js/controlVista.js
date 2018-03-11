@@ -8,7 +8,7 @@ $(document).ready(function () {
     //-----------------------------------------------------//
     $('#cliente').click(function () {
         $("#desktop").fadeOut(200, function () {
-            $("#desktop").load("Vistas/cliente/tabla.jsp");
+            $("#desktop").load("Vistas/cliente/cliente.jsp");
             $("#desktop").fadeIn(2000);
         });
     });
