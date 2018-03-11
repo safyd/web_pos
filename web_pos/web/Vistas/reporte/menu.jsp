@@ -38,7 +38,7 @@
         <div class="col-md-2 column productbox">
             <img src="http://placehold.it/460x250/e67e22/ffffff&text=HTML5" class="img-responsive">
             <div class="producttitle">Devolución Venta</div>
-            <div class="productprice"><div class="pull-right"><a href="#" class="btn btn-success btn-sm" role="button">Generar</a></div><div class="pricetext">00</div></div>
+            <div class="pull-right"><a href="#" class="btn btn-success btn-sm" role="button">Generar</a></div><div class="pull-right"><a href="#" class="btn btn-primary btn-sm" role="button">ver</a></div>
         </div>
     </div>
 </div>
