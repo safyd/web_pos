@@ -1,7 +1,8 @@
+<link rel="stylesheet" href="css/fondoinicio.css">
 <div class="panel-collapse" id="principal">
     <div class="container-fluid    col-md-offset-5  ">
         <div class="jumbotron1">
-            <h1>Hola Bienvenido</h1>
+            <h1 style="color:#fff;">Hola Bienvenido</h1>
         </div></div>
     <div class="col-lg-12">
     <div class=" col-sm-12 col-lg-3 col-xs-12">
