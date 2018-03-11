@@ -67,4 +67,10 @@ $(document).ready(function () {
         });
     });
 //-----------------------------------------------------//   
+ $('#reporte').click(function () {
+        $("#desktop").fadeOut(200, function () {
+            $("#desktop").load("Vistas/reporte/menu.jsp");
+            $("#desktop").fadeIn(2000);
+        });
+    });
 });
