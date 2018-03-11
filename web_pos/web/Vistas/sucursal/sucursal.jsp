@@ -35,7 +35,7 @@
                 <div class="bg-light ">
                     <div class="container">
                         <div class="py-6 text-center">
-                            <h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit; font-family:  fantasy;">Compañia</font></font></h2>
+                            <h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit; font-family:  fantasy;">Sucursal</font></font></h2>
                         </div>
                     </div>
                     <div class="col-md-12">
