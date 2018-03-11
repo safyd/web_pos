@@ -42,4 +42,12 @@ public class FleteWS extends WebService {
     public Response Eliminar(InputStream inputstream) throws JSONException {
         return this.hacerRespuesta(new JSONArray());
     }
+
+    @Path("/Reporte")
+    @POST
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response Reporte(InputStream inputstream) throws JSONException {
+        return this.hacerRespuesta(new JSONArray());
+    }
 }
