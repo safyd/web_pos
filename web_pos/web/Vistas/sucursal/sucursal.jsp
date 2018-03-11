@@ -13,23 +13,31 @@
 
 <script src="js/Servicios.js"></script>
 <script src="js/json.js"></script>
-<script>
-    var modelo = {
-        //AQUI SE COLOCA LA ESRUCTURA QUE ESTA EN EL HTML
-        Nombre: "Sucursal",
-        Cuerpo: [
-            {telefono: "telefono"},
-            {Code: "Swift"},
-            {compania: document.getElemtbyID("com_nombre").valueOf()},
-            {}
-        ]
-    };
-    var url = "http://localhost:8085/SAFYD_CONTROL/webresources/generic/algo";
+<%@ page import="com.safyd.entidad.Paginas" %>
+<script type="text/javascript">
+    var url = '<%= Paginas.Sucursal.CONSULTAR_SUCURSALES%>';
+     var urlAgregarSucursal = '<%= Paginas.Sucursal.AGREGAR_SUCURSAL%>';
+    var urlEliminarSucursal = '<%= Paginas.Sucursal.ELIMINAR_SUCURSAL%>';
+//"http://localhost:8085/web_pos/webresources/ClienteWS/Consultar/";
+    //Es necesario Jquery
+    $.getScript("js/json.js");
+    var modelo = creaJSON();
 
-
+    function creaJSON() {
+        return JSON.stringify({
+            "suc_rfc": $('#suc_rfc').val(),
+            "suc_razoncoscial": $('#suc_razoncoscial').val(),
+            "suc_direccion": $('#suc_direccion').val(),
+            "suc_numerodesucursal": $('#suc_numerodesucursal').val(),
+            "suc_codigopostal": $('#suc_codigopostal').val(),
+            "suc_entrecalleycalle": $('#suc_entrecalleycalle').val(),
+            "suc_numeroexterior": $('#suc_numeroexterior').val(),
+            "suc_descripciondelasusucrsal": $('#suc_descripciondelasusucrsal').val(),
+             "suc_referencias": $('#suc_referencias').val()
+        });
+    }
 
 </script>
-
   <div class="panel panel-footer">
             <div class="panel-body" id="desktop">
                 <div class="bg-light ">
@@ -41,25 +49,25 @@
                     <div class="col-md-12">
             <div class="col-md-6 mb-3">
                 <label class="control-label" for="sta_address">RFC:*</label>
-                <input class="form-control" id="rfc"  type="text" placeholder="RFC"/></div>
+                <input class="form-control" id="suc_rfc"  type="text" placeholder="RFC"/></div>
                 <div class="col-md-6 mb-3">
                 <label class="control-label" for="sta_address">Razón Social:*</label>
-                <input class="form-control" id="razoncoscial" placeholder="Razaon Social" required data-error ="Error">
+                <input class="form-control" id="suc_razoncoscial" placeholder="Razaon Social" required data-error ="Error">
                 </div>
                     </div>
                        <div class="col-md-12">
                      <div class="col-md-8 mb-3">
                 <label class="control-label" for="sta_address">Dirección:*</label>
-                <input class="form-control" id="direccion" type="text" placeholder="Dirección">
+                <input class="form-control" id="suc_direccion" type="text" placeholder="Dirección">
             </div>
                     
             <div class="col-md-2 mb-3">
                 <label class="control-label" for="sta_address">numero de Sucursal:*</label>
-                <input class="form-control" id="numerodesucursal" type="email" placeholder="Numero de Sucursal" required data-error ="Error">
+                <input class="form-control" id="suc_numerodesucursal" type="email" placeholder="Numero de Sucursal" required data-error ="Error">
             </div>
                         <div class="col-md-2 mb-3">
                 <label class="control-label" for="sta_address">Codigo postal:*</label>
-                <input class="form-control" id="codigopostal" type="text" placeholder="Codigo Postal">
+                <input class="form-control" id="suc_codigopostal" type="text" placeholder="Codigo Postal">
             </div>
                        </div>
                     
@@ -67,22 +75,22 @@
            
             <div class="col-md-10 mb-3">
                 <label class="control-label" for="sta_address">Entre Calle y Calle:*</label>
-                <input class="form-control" id="entrecalleycalle" type="text" placeholder="Entre Calle y Calle" > 
+                <input class="form-control" id="suc_entrecalleycalle" type="text" placeholder="Entre Calle y Calle" > 
             </div>
                                     <div class="col-md-2 mb-3">
-                <label class="control-label" for="sta_address">N.Exterior:*</label>
-                <input class="form-control" id="n.exterior" type="text" placeholder="N.Exterior" > 
+                <label class="control-label" for="sta_address">Numero Exterior:*</label>
+                <input class="form-control" id="suc_numeroexterior" type="text" placeholder="N.Exterior" > 
             </div>
                        </div>
                     </div>
                     <div class="col-md-12">        
             <div class="col-md-8 mb-3">
                 <label class="control-label" for="sta_address">Descripción de la Sucursal:*</label>
-                <input class="form-control" id="descripciondelasusucrsal" type="text" placeholder="Descripción de la Sucursal">
+                <input class="form-control" id="suc_descripciondelasusucrsal" type="text" placeholder="Descripción de la Sucursal">
             </div>
             <div class="col-md-4 mb-3">
                 <label class="control-label" for="sta_address">Referencias:*</label>
-                <input class="form-control" id="referencias" type="text" placeholder="Referencias">
+                <input class="form-control" id="suc_referencias" type="text" placeholder="Referencias">
             </div>
                     </div>
               
