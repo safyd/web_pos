@@ -31,7 +31,7 @@ public class ClienteWS extends WebService {
     @Produces(MediaType.APPLICATION_JSON)
     public Response Consultar(InputStream inputstream) throws JSONException {
         try {
-            JSONObject prueba  = this.obtenJSON(inputstream);
+            JSONObject prueba = this.obtenJSON(inputstream);
             ArrayList<Cliente> clienteLista = new ArrayList<>();
             JSONObject json;
             JSONArray jsonArray = new JSONArray();
@@ -83,7 +83,7 @@ public class ClienteWS extends WebService {
                     Logger.getLogger(ClienteWS.class.getName()).log(Level.SEVERE, null, ex);
                     return this.hacerRespuesta(new JSONObject());
                 }
-                
+
             }
 
             return this.hacerRespuesta(jsonArray);
@@ -91,6 +91,21 @@ public class ClienteWS extends WebService {
             Logger.getLogger(ClienteWS.class.getName()).log(Level.SEVERE, null, ex);
             return this.hacerRespuesta(ex.toString());
         }
+    }
+
+    @Path("/Nuevo")
+    @POST
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response Nuevo(InputStream inputstream) throws JSONException {
+        return this.hacerRespuesta(new JSONArray());
+    }
+    @Path("/Elimnar")
+    @POST
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response Elimnar(InputStream inputstream) throws JSONException {
+        return this.hacerRespuesta(new JSONArray());
     }
 
 }
