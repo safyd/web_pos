@@ -13,20 +13,13 @@ $(document).ready(function () {
         });
     });
     //-----------------------------------------------------//
-    $('#administracion').click(function () {
-        $("#desktop").load("Vistas/administracion/administracion.jsp");
+    $('#compañia').click(function () {
+        $("#desktop").load("Vistas/compañia/compañia.jsp");
     });
     //-----------------------------------------------------//
 
     //-----------------------------------------------------//
-    $('#sucursal').click(function () {
-        $("#desktop").hide("slow", function () {
-            $("#desktop").load("Vistas/compania/tabla.jsp");
-            $("#desktop").show("slow", function () {
-            });
-        });
-
-    });
+    
     //-----------------------------------------------------//
     $('#diseño').click(function () {
         $("#desktop").load("Vistas/diseño/diseño.jsp");
@@ -42,7 +35,7 @@ $(document).ready(function () {
     //-----------------------------------------------------//
     $('#sucursal').click(function () {
         $("#desktop").hide("slow", function () {
-            $("#desktop").load("Vistas/sucursal/tabla.jsp");
+            $("#desktop").load("Vistas/sucursal/sucursal.jsp");
             $("#desktop").show("slow", function () {
             });
         });
