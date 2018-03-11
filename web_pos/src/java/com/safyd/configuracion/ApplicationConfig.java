@@ -15,6 +15,7 @@ public class ApplicationConfig extends Application {
     }
     private void addRestResourceClasses(Set<Class<?>> resources) {
         //add all resources classes
+        resources.add(com.safyd.configuracion.FleteWS.class);
         resources.add(com.safyd.configuracion.GenericResource.class);
         resources.add(com.safyd.ws.ArticuloWS.class);
         resources.add(com.safyd.ws.ClienteWS.class);
