@@ -18,7 +18,9 @@ public class Paginas {
 
         private static final String SUCURSAL = "/SucursalWS";
         public static final String CONSULTAR_SUCURSALES = SERVIDOR + APLICACION + RECURSOS + SUCURSAL + "/Consultar";
-
+        public  static final String AGREGAR_SUCURSAL = SERVIDOR + APLICACION + RECURSOS + SUCURSAL + "/Agregar";
+         public  static final String ELIMINAR_SUCURSAL = SERVIDOR + APLICACION + RECURSOS + SUCURSAL + "/Eliminar";
+        
     }
 
     public static class Flete {
