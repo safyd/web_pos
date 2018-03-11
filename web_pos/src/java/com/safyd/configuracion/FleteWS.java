@@ -19,12 +19,6 @@ public class FleteWS extends WebService {
     @Context
     private UriInfo context;
 
-    /**
-     * Creates a new instance of FleteWS
-     */
-    public FleteWS() {
-    }
-
     @Path("/Consultar")
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
@@ -32,13 +26,15 @@ public class FleteWS extends WebService {
     public Response Consultar(InputStream inputstream) throws JSONException {
         return this.hacerRespuesta(new JSONArray());
     }
-    @Path("/Agregar")
+
+    @Path("/AgregarModificar")
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public Response Agregar(InputStream inputstream) throws JSONException {
         return this.hacerRespuesta(new JSONArray());
     }
+
     @Path("/Eliminar")
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
