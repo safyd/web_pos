@@ -12,11 +12,11 @@ $(document).ready(function () {
             $("#desktop").fadeIn(2000);
         });
     });
-    //-----------------------------------------------------//
-    $('#compañia').click(function () {
-        $("#desktop").load("Vistas/compañia/compañia.jsp");
-    });
-    //-----------------------------------------------------//
+//    //-----------------------------------------------------//
+//    $('#compañia').click(function () {
+//        $("#desktop").load("Vistas/compañia/compañia.jsp");
+//    });
+//    //-----------------------------------------------------//
 
     //-----------------------------------------------------//
     
@@ -66,4 +66,22 @@ $(document).ready(function () {
             $("#desktop").fadeIn(2000);
         });
     });
+    //-----------------------------------------------------//   
+   $('#compañia').click(function () {
+        $("#desktop").hide("slow", function () {
+            $("#desktop").load("Vistas/compania/compania.jsp");
+            $("#desktop").show("slow", function () {
+            });
+        });
+    });
+       //-----------------------------------------------------//   
+   $('#devolucion').click(function () {
+        $("#desktop").hide("slow", function () {
+            $("#desktop").load("Vistas/devolucion/menu.jsp");
+            $("#desktop").show("slow", function () {
+            });
+        });
+    });
+      //-----------------------------------------------------//   
+   
 });
