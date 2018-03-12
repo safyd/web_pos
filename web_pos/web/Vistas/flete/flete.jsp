@@ -39,8 +39,6 @@
     </div>
     <div class="panel-footer clearfix">
         <div class="pull-right">
-            <!--<a href="#" id="btnNuevo" class="btn btn-default" onclick="">Nuevo</a>-->
-            <!--<a href="#" id="btnEliminar" class="btn btn-danger">Eliminar</a>-->
             <a href="#" id="btnGuardar" class="btn  btn-primary">Guardar</a>
             <a href="#" id="btnCancelar" class="btn  btn-danger">Cancelar</a>
         </div>
