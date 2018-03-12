@@ -17,17 +17,17 @@
                 <div class="col-md-4 column productbox">
                     <img src="http://placehold.it/460x250/e67e22/ffffff&text=HTML5" class="img-responsive">
                     <div class="producttitle">Canselación de Apartados</div>
-                    <div class="pull-right"><a href="#" id="canselaapartados" class="btn btn-primary btn-sm" role="button">Abrir</a></div>
+                    <div class="pull-right" id="canselapartados"><a href="#" class="btn btn-primary btn-md" role="button">Abrir</a></div>
                 </div>
                 <div class="col-md-4 column productbox">
                     <img src="http://placehold.it/460x250/e67e22/ffffff&text=HTML5" class="img-responsive">
                     <div class="producttitle">Devolucion de Venta</div>
-                    <div class="pull-right"><a href="#" class="btn btn-primary btn-sm" role="button">Abrir</a></div>
+                    <div class="pull-right"><a href="#" class="btn btn-primary btn-md" role="button">Abrir</a></div>
                 </div>
                 <div class="col-md-4 column productbox">
                     <img src="http://placehold.it/460x250/e67e22/ffffff&text=HTML5" class="img-responsive">
                     <div class="producttitle">Devolucion de Compras</div>
-                    <div class="pull-right"><a href="#" class="btn btn-primary btn-sm" role="button">Abrir</a></div>
+                    <div class="pull-right"><a href="#" class="btn btn-primary btn-md" role="button">Abrir</a></div>
                 </div> </div>
         
         </div>
