@@ -27,5 +27,10 @@ public class Paginas {
         public static final String CONSULTAR_FLETES = SERVIDOR + APLICACION + RECURSOS + FLETE + "/Consultar";
 
     }
+    public static class Articulo{
+        private static final String ARTICULO = "/ArticuloWS";
+        public static final String CONSULTAR_ARTICULOS =  SERVIDOR + APLICACION + RECURSOS + ARTICULO + "/Consultar";
+    }
+   
 
 }
