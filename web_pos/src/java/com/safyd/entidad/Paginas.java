@@ -10,7 +10,7 @@ public class Paginas {
 
         private static final String CLIENTE = "/ClienteWS";
         public static final String CONSULTAR_CLIENTES = SERVIDOR + APLICACION + RECURSOS + CLIENTE + "/Consultar";
-        public static final String NUEVO_CLIENTE = SERVIDOR + APLICACION + RECURSOS + CLIENTE + "/Nuevo";
+        public static final String AGREGAR_CLIENTE = SERVIDOR + APLICACION + RECURSOS + CLIENTE + "/Nuevo";
         public static final String ELIMINAR_CLIENTE = SERVIDOR + APLICACION + RECURSOS + CLIENTE + "/Elimnar";
     }
 
