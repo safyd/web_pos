@@ -13,7 +13,6 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import org.json.JSONException;
 import org.json.JSONObject;
-import com.safyd.entidad.Articulo;
 import java.util.ArrayList;
 
 @Path("Articulo")
@@ -38,7 +37,6 @@ public class ArticuloWS extends WebService {
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public Response Consultar(InputStream inputstream) {
-        ArrayList<Articulo> articuloLista;
 
         return this.hacerRespuesta(new JSONObject());
     }
