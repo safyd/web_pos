@@ -17,6 +17,7 @@ public class ApplicationConfig extends Application {
         //add all resources classes
         resources.add(com.safyd.configuracion.FleteWS.class);
         resources.add(com.safyd.configuracion.GenericResource.class);
+        resources.add(com.safyd.ws.ApartadoWS.class);
         resources.add(com.safyd.ws.ArticuloWS.class);
         resources.add(com.safyd.ws.ClienteWS.class);
         resources.add(com.safyd.ws.CompaniaWS.class);

@@ -35,7 +35,7 @@ public class SucursalWS extends WebService {
         return this.hacerRespuesta(new JSONArray());
     }
 
-    @Path("/AgregarModificar")
+    @Path("/Agregar")
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
