@@ -14,9 +14,7 @@ public class ApplicationConfig extends Application {
         return resources;
     }
     private void addRestResourceClasses(Set<Class<?>> resources) {
-        //add all resources classes
-        resources.add(com.safyd.configuracion.FleteWS.class);
-        resources.add(com.safyd.configuracion.GenericResource.class);
+        //AGREGAR CLASES TIPO Ws
         resources.add(com.safyd.ws.ApartadoWS.class);
         resources.add(com.safyd.ws.ArticuloWS.class);
         resources.add(com.safyd.ws.ClienteWS.class);
@@ -24,5 +22,6 @@ public class ApplicationConfig extends Application {
         resources.add(com.safyd.ws.FleteWS.class);
         resources.add(com.safyd.ws.InventarioWS.class);
         resources.add(com.safyd.ws.SucursalWS.class);
+        resources.add(com.safyd.ws.TasaocuotaWS.class);
     }
 }
